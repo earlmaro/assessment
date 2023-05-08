@@ -29,7 +29,7 @@ public class DeciderTests
         string orderStatus = _decideStatus.Decide(customerName, vehicleMake, vehicleModel, repairCost, isRushOrder, orderType, isNewCustomer, isLargeOrder);
 
         // Assert
-        Assert.AreEqual("AuthorisationRequired", orderStatus);
+        Assert.That(orderStatus, Is.EqualTo("AuthorisationRequired"));
         }
 
     [Test]
@@ -49,7 +49,7 @@ public class DeciderTests
         string orderStatus = _decideStatus.Decide(customerName, vehicleMake, vehicleModel, repairCost, isRushOrder, orderType, isNewCustomer, isLargeOrder);
 
         // Assert
-        Assert.AreEqual("Closed", orderStatus);
+        Assert.That(orderStatus, Is.EqualTo("Closed"));
     }
 
     [Test]
@@ -69,7 +69,7 @@ public class DeciderTests
         string orderStatus = _decideStatus.Decide(customerName, vehicleMake, vehicleModel, repairCost, isRushOrder, orderType, isNewCustomer, isLargeOrder);
 
         // Assert
-        Assert.AreEqual("Closed", orderStatus);
+        Assert.That(orderStatus, Is.EqualTo("Closed"));
     }
     [Test]
     public void GetOrderStatus_ReturnsAuthorisationRequired_ForNewCustomerRushedOrder()
@@ -88,7 +88,7 @@ public class DeciderTests
         string orderStatus = _decideStatus.Decide(customerName, vehicleMake, vehicleModel, repairCost, isRushOrder, orderType, isNewCustomer, isLargeOrder);
 
         // Assert
-        Assert.AreEqual("AuthorisationRequired", orderStatus);
+        Assert.That(orderStatus, Is.EqualTo("AuthorisationRequired"));
     }
 
     [Test]
