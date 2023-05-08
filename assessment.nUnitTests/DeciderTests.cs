@@ -108,6 +108,6 @@ public class DeciderTests
         string orderStatus = _decideStatus.Decide(customerName, vehicleMake, vehicleModel, repairCost, isRushOrder, orderType, isNewCustomer, isLargeOrder);
 
         // Assert
-        Assert.AreEqual("Confirmed", orderStatus);
+        Assert.That(orderStatus, Is.EqualTo("Confirmed"));
     }
 }
