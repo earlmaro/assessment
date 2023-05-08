@@ -76,7 +76,7 @@ public class DeciderTests
     {
         // Arrange
         string customerName = "John Smith";
-        string vehicleMake = "Honda";
+        string vehicleMake = "Toyota";
         string vehicleModel = "Civic";
         decimal repairCost = 500;
         bool isRushOrder = true;
@@ -95,7 +95,7 @@ public class DeciderTests
     public void GetOrderStatus_ReturnsConfirmed_ForOtherOrder()
     {
         // Arrange
-        string customerName = "John Smith";
+        string customerName = "John Doe";
         string vehicleMake = "Honda";
         string vehicleModel = "Civic";
         decimal repairCost = 500;
