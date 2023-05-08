@@ -57,7 +57,7 @@ public class DeciderTests
     {
         // Arrange
         string customerName = "John Smith";
-        string vehicleMake = "Honda";
+        string vehicleMake = "Range";
         string vehicleModel = "Civic";
         decimal repairCost = 500;
         bool isRushOrder = true;
